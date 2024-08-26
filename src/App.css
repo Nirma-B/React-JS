@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+*{
+  box-sizing:border-box;
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.navbar{
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  display:flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding: 10px;
+  font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+.products-container
+{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  width: 100%;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+.card
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+.card-description
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-style:italic;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+img{
+  width: 250px;
+  height:250px;
+  transition: all 0.3s ease;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+img:hover{
+  transform:scale(1.1);
+}
+.category
+{
+  font-style:italic;
+  font-family: 'Times New Roman', Times, serif;
+  color:black;
+  margin-top: 5px;
+}
+.footer
+{
+  width:100%;
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: auto;
 }
